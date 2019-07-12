@@ -4,7 +4,7 @@ ZSH_THEME="avit"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 plugins=(
   git
@@ -16,14 +16,13 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export EDITOR="emacs"
-
 alias ls="exa"  # need to do brew install exa first
 alias ll="exa -la"
 alias python="python3"
 
 path+=/Users/lebanon/Library/Python/3.7/bin
 export PATH
+export EDITOR="emacs"
 
 # auto-completion
 autoload -Uz compinit
