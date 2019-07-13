@@ -1,27 +1,23 @@
 export ZSH="/Users/lebanon/.oh-my-zsh"
-ZSH_THEME="avit"
+ZSH_THEME="alpharized"  
 
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"  # version control
 
 plugins=(
   git
   zsh-syntax-highlighting
   zsh-autosuggestions
+  colored-man-pages
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-alias ls="exa"  # need to do brew install exa first
+alias ls="exa"
 alias ll="exa -la"
 alias python="python3"
 
-path+=/Users/lebanon/Library/Python/3.7/bin
-export PATH
 export EDITOR="emacs"
 
 # auto-completion
@@ -38,5 +34,3 @@ bindkey -e
 autoload -Uz run-help
 unalias run-help
 alias help=run-help
-
-set -o noclobber
